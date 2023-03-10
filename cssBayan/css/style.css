@@ -1,0 +1,65 @@
+.container {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vw;
+  margin: 0 auto;
+}
+
+.first_meme {
+  width: 100%;
+  background-color: bisque;
+  border-radius: 1rem;
+}
+
+.second_meme {
+  width: 100%;
+  background-color: bisque;
+  border-radius: 1rem;
+}
+
+.third_meme {
+  width: 100%;
+  background-color: bisque;
+  border-radius: 1rem;
+}
+
+.fourth_meme {
+  width: 100%;
+  background-color: bisque;
+  border-radius: 1rem;
+}
+
+.fifth_meme {
+  width: 100%;
+  background-color: bisque;
+  border-radius: 1rem;
+}
+
+img {
+  display: none;
+  margin: 0 auto;
+  width: 50%;
+  height: 50%;
+
+}
+
+.first_meme:hover .first_meme_image {
+  display: block;
+}
+
+.second_meme:hover .second_meme_image {
+  display: block;
+}
+
+.third_meme:hover .third_meme_image {
+  display: block;
+}
+
+.fourth_meme:hover .fourth_meme_image {
+  display: block;
+}
+
+.fifth_meme:hover .fifth_meme_image {
+  display: block;
+}
