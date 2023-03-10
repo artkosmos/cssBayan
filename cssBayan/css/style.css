@@ -2,64 +2,78 @@
   width: 500px;
   display: flex;
   flex-direction: column;
-  gap: 0.5vw;
+  gap: 1rem;
   margin: 0 auto;
 }
 
 .first_meme {
   width: 100%;
+  min-height: 2rem;
   background-color: bisque;
   border-radius: 1rem;
 }
 
 .second_meme {
   width: 100%;
+  min-height: 2rem;
   background-color: bisque;
   border-radius: 1rem;
 }
 
 .third_meme {
   width: 100%;
+  min-height: 2rem;
   background-color: bisque;
   border-radius: 1rem;
 }
 
 .fourth_meme {
   width: 100%;
+  min-height: 2rem;
   background-color: bisque;
   border-radius: 1rem;
 }
 
 .fifth_meme {
   width: 100%;
+  min-height: 2rem;
   background-color: bisque;
   border-radius: 1rem;
 }
 
 img {
-  display: none;
+  display: block;
   margin: 0 auto;
-  width: 50%;
-  height: 50%;
-
+  width: 0;
+  height: 0;
 }
 
 .first_meme:hover .first_meme_image {
-  display: block;
+  transition: 800ms;
+  width: 50%;
+  height: 100%;
 }
 
 .second_meme:hover .second_meme_image {
-  display: block;
+  transition: 800ms;
+  width: 50%;
+  height: 100%;
 }
 
 .third_meme:hover .third_meme_image {
-  display: block;
+  transition: 800ms;
+  width: 50%;
+  height: 100%;
 }
 
 .fourth_meme:hover .fourth_meme_image {
-  display: block;
+  transition: 800ms;
+  width: 50%;
+  height: 100%;
 }
 
 .fifth_meme:hover .fifth_meme_image {
-  display: block;
+  transition: 800ms;
+  width: 50%;
+  height: 100%;
 }
