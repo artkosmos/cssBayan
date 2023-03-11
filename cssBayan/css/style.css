@@ -41,33 +41,33 @@
   border-radius: 1rem;
 }
 
-img {
-  display: block;
-  margin: 0 auto;
-  width: 0;
-  height: 0;
+#meme_1:checked~.first_label .first_meme_block .first_meme_image {
+  transition: 1s;
+  width: 50%;
+  height: 100%;
+}
 }
 
-.first_meme:hover .first_meme_image {
-  transition: 800ms;
+#meme_2:checked~.second_label .second_meme_block .second_meme_image {
+  transition: 1s;
   width: 50%;
   height: 100%;
 }
 
-.second_meme:hover .second_meme_image {
-  transition: 800ms;
+#meme_3:checked~.third_label .third_meme_block .third_meme_image {
+  transition: 1s;
   width: 50%;
   height: 100%;
 }
 
-.third_meme:hover .third_meme_image {
-  transition: 800ms;
+#meme_4:checked~.fourth_label .fourth_meme_block .fourth_meme_image {
+  transition: 1s;
   width: 50%;
   height: 100%;
 }
 
-.fourth_meme:hover .fourth_meme_image {
-  transition: 800ms;
+#meme_5:checked~.fifth_label .fifth_meme_block .fifth_meme_image {
+  transition: 1s;
   width: 50%;
   height: 100%;
 }
