@@ -24,6 +24,15 @@
   color: blue;
 }
 
+.meme_block:active {
+  opacity: 0.6;
+}
+
+.meme_block:active .meme_block_header {
+  color: blue;
+}
+
+
 .meme_block_header {
   height: 2rem;
   display: flex;
