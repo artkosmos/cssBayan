@@ -16,6 +16,7 @@ html {
   padding: 0 1rem;
   border-radius: 5%;
   margin-top: 3rem;
+  box-shadow: 0px 0px 20px 15px rgba(34, 60, 80, 0.2);
 }
 
 .container:hover>label .meme_block {
