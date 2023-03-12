@@ -71,10 +71,11 @@ html {
   margin: 0 auto;
   width: 0;
   height: 0;
+  transition: 150ms;
 }
 
 .meme_block:hover .image {
-  transition: 1s;
+  transition: 0.8s;
   width: 50%;
   height: 100%;
 }
