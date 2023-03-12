@@ -99,6 +99,10 @@ input {
   color: black;
 }
 
+#meme_1:checked~.first_label .first_meme_block:active .meme_block_header {
+  color: red;
+}
+
 #meme_1:checked~.first_label .first_meme_block .meme_block_header i {
   transform: none;
 }
@@ -111,6 +115,10 @@ input {
 
 #meme_2:checked~.second_label .second_meme_block .meme_block_header {
   color: black;
+}
+
+#meme_2:checked~.second_label .second_meme_block:active .meme_block_header {
+  color: red;
 }
 
 #meme_2:checked~.second_label .second_meme_block .meme_block_header i {
@@ -127,6 +135,10 @@ input {
   color: black;
 }
 
+#meme_3:checked~.third_label .third_meme_block:active .meme_block_header {
+  color: red;
+}
+
 #meme_3:checked~.third_label .third_meme_block .meme_block_header i {
   transform: none;
 }
@@ -141,6 +153,10 @@ input {
   color: black;
 }
 
+#meme_4:checked~.fourth_label .fourth_meme_block:active .meme_block_header {
+  color: red;
+}
+
 #meme_4:checked~.fourth_label .fourth_meme_block .meme_block_header i {
   transform: none;
 }
@@ -153,6 +169,10 @@ input {
 
 #meme_5:checked~.fifth_label .fifth_meme_block .meme_block_header {
   color: black;
+}
+
+#meme_5:checked~.fifth_label .fifth_meme_block:active .meme_block_header {
+  color: red;
 }
 
 #meme_5:checked~.fifth_label .fifth_meme_block .meme_block_header i {
