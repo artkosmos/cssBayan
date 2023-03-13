@@ -16,15 +16,19 @@ html {
   padding: 0 1rem;
   border-radius: 5%;
   margin-top: 3rem;
-  box-shadow: 0px 0px 20px 15px rgba(34, 60, 80, 0.2);
+  box-shadow: 0 0 1.2rem 1.2rem rgba(34, 60, 80, 0.2);
 }
 
 .container:hover>label .meme_block {
   color: black;
 }
 
-.container:hover>label .meme_block .meme_block_header i {
+.container:hover>label .meme_block .meme_block_header span {
   visibility: visible;
+}
+
+.material-icons {
+  font-weight: 200;
 }
 
 .container .main_title {
@@ -62,7 +66,7 @@ html {
   font-size: 1rem;
 }
 
-.meme_block_header i {
+.meme_block_header span {
   transform: rotate(45deg);
   visibility: hidden;
 }
@@ -81,7 +85,7 @@ html {
   height: 15rem;
 }
 
-.meme_block:hover .meme_block_header i {
+.meme_block:hover .meme_block_header span {
   transition: 150ms;
   transform: none;
 }
@@ -104,7 +108,7 @@ input {
   color: blue;
 }
 
-#meme_1:checked~.first_label .first_meme_block .meme_block_header i {
+#meme_1:checked~.first_label .first_meme_block .meme_block_header span {
   transform: none;
 }
 
@@ -122,7 +126,7 @@ input {
   color: blue;
 }
 
-#meme_2:checked~.second_label .second_meme_block .meme_block_header i {
+#meme_2:checked~.second_label .second_meme_block .meme_block_header span {
   transform: none;
 }
 
@@ -140,7 +144,7 @@ input {
   color: blue;
 }
 
-#meme_3:checked~.third_label .third_meme_block .meme_block_header i {
+#meme_3:checked~.third_label .third_meme_block .meme_block_header span {
   transform: none;
 }
 
@@ -158,7 +162,7 @@ input {
   color: blue;
 }
 
-#meme_4:checked~.fourth_label .fourth_meme_block .meme_block_header i {
+#meme_4:checked~.fourth_label .fourth_meme_block .meme_block_header span {
   transform: none;
 }
 
@@ -176,7 +180,7 @@ input {
   color: blue;
 }
 
-#meme_5:checked~.fifth_label .fifth_meme_block .meme_block_header i {
+#meme_5:checked~.fifth_label .fifth_meme_block .meme_block_header span {
   transform: none;
 }
 
