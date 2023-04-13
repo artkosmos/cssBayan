@@ -1,0 +1,216 @@
+* {
+  font-family: 'Tilt Warp';
+}
+
+html {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  background-color: rgb(236, 233, 213);
+  padding: 0 1rem;
+  border-radius: 5%;
+  margin-top: 3rem;
+  box-shadow: 0 0 1.2rem 1.2rem rgba(34, 60, 80, 0.2);
+}
+
+.container .main_title {
+  border-bottom: 0.08rem solid rgba(0, 0, 0, 0.2);
+}
+
+.container label:last-child .meme_block {
+  border-bottom: none;
+  margin-bottom: 0.2rem;
+}
+
+.meme_block {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  cursor: pointer;
+  color: blue;
+  border-bottom: 0.08rem solid rgba(0, 0, 0, 0.2);
+}
+
+.meme_block:active {
+  opacity: 0.5;
+}
+
+.meme_block:active .meme_block_header {
+  color: blue;
+}
+
+.meme_block_header {
+  height: 2.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.meme_block_header span {
+  transform: rotate(45deg);
+}
+
+.image {
+  display: block;
+  margin: 0 auto;
+  width: 0;
+  height: 0;
+  transition: 150ms;
+}
+
+input {
+  display: none;
+}
+
+#meme_1:checked~.first_label .first_meme_block .first_meme_image {
+  transition: 1s;
+  width: 50%;
+  height: 15rem;
+}
+
+#meme_1:checked~.first_label .first_meme_block .meme_block_header {
+  color: black;
+}
+
+#meme_1:checked~.first_label .first_meme_block:active .meme_block_header {
+  color: blue;
+}
+
+#meme_1:checked~.first_label .first_meme_block .meme_block_header span {
+  transform: none;
+  transition: 150ms;
+}
+
+#meme_2:checked~.second_label .second_meme_block .second_meme_image {
+  transition: 1s;
+  width: 50%;
+  height: 15rem;
+}
+
+#meme_2:checked~.second_label .second_meme_block .meme_block_header {
+  color: black;
+}
+
+#meme_2:checked~.second_label .second_meme_block:active .meme_block_header {
+  color: blue;
+}
+
+#meme_2:checked~.second_label .second_meme_block .meme_block_header span {
+  transform: none;
+  transition: 150ms;
+}
+
+#meme_3:checked~.third_label .third_meme_block .third_meme_image {
+  transition: 1s;
+  width: 50%;
+  height: 15rem;
+}
+
+#meme_3:checked~.third_label .third_meme_block .meme_block_header {
+  color: black;
+}
+
+#meme_3:checked~.third_label .third_meme_block:active .meme_block_header {
+  color: blue;
+}
+
+#meme_3:checked~.third_label .third_meme_block .meme_block_header span {
+  transform: none;
+  transition: 150ms;
+}
+
+#meme_4:checked~.fourth_label .fourth_meme_block .fourth_meme_image {
+  transition: 1s;
+  width: 50%;
+  height: 15rem;
+}
+
+#meme_4:checked~.fourth_label .fourth_meme_block .meme_block_header {
+  color: black;
+}
+
+#meme_4:checked~.fourth_label .fourth_meme_block:active .meme_block_header {
+  color: blue;
+}
+
+#meme_4:checked~.fourth_label .fourth_meme_block .meme_block_header span {
+  transform: none;
+  transition: 150ms;
+}
+
+#meme_5:checked~.fifth_label .fifth_meme_block .fifth_meme_image {
+  transition: 1s;
+  width: 50%;
+  height: 15rem;
+}
+
+#meme_5:checked~.fifth_label .fifth_meme_block .meme_block_header {
+  color: black;
+}
+
+#meme_5:checked~.fifth_label .fifth_meme_block:active .meme_block_header {
+  color: blue;
+}
+
+#meme_5:checked~.fifth_label .fifth_meme_block .meme_block_header span {
+  transform: none;
+  transition: 150ms;
+}
+
+/* we can use px in media request */
+@media (max-width: 400px) {
+  .container {
+    width: 80vw;
+  }
+
+  .meme_block_header {
+    height: 1.3rem;
+    font-size: 0.5rem;
+  }
+
+}
+
+@media (min-width: 401px) and (max-width: 920px) {
+  .container {
+    width: 65vw;
+  }
+
+  .meme_block_header {
+    height: 1.6rem;
+    font-size: 0.7rem;
+  }
+}
+
+/* Cursor over the memes (hover) effect only exists for devices that can support hover */
+@media (hover: hover) {
+  .container:hover>label .meme_block {
+    color: black;
+  }
+
+  .meme_block:hover .image {
+    transition: 0.8s;
+    width: 50%;
+    height: 15rem;
+  }
+
+  .meme_block:hover .meme_block_header span {
+    transition: 150ms;
+    transform: none;
+  }
+
+  .meme_block_header span {
+    visibility: hidden;
+  }
+
+  .container:hover>label .meme_block .meme_block_header span {
+    visibility: visible;
+  }
+}
